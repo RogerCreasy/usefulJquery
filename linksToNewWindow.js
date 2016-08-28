@@ -3,7 +3,7 @@
  * Author: Roger Creasy
  * Author Email: roger@RogerCreasy.com
  * Created : 8/27/16
- * Description: Make all external links on a site target="_balnk"
+ * Description: Make all external links on a site target="_blank"
  */
 
 $(document.links).filter(function() {
