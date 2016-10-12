@@ -6,7 +6,7 @@ If you are interested in contributing, please submit a PR.
 
 ## Examples
 
-**Back To Top Button**  
+[**Back To Top Button**](backToTop.js)  
 This jQuery snippet allows you to scroll to the top of the page when clicking on the element with a class of `.backToTop`.  
 
 *Usage:*  
@@ -19,7 +19,7 @@ This jQuery snippet allows you to scroll to the top of the page when clicking on
 </body>
 ```
 
-**Bootstrap Nav Highlight**  
+[**Bootstrap Nav Highlight**](bootstrapNavHighlightActive.js)  
 This jQuery snippet allows you to highlight the active element in a nav bar by using a `ul` with a class of `.nav`.  
 
 *Usage:*  
@@ -35,7 +35,7 @@ This jQuery snippet allows you to highlight the active element in a nav bar by u
 </body>
 ```
 
-**Smooth Scroll**  
+[**Smooth Scroll**](smoothScroll.js)  
 This jQuery snippet allows you to scroll to any id on the page by clicking a nav item link with a selector of `.nav a`. The `a` tag must use a href pointing to an id (i.e. `<a href="#examples">Examples</a>`).  
 
 *Usage:*  
