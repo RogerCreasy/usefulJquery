@@ -81,6 +81,18 @@ This jQuery snippet allows you to scroll to any id on the page by clicking a nav
 </body>
 ```
 
+[**US State Select Populator**](stateDropdownPopulator.js)  
+This jQuery snippet allows you to automatically fill a `select` element with dropdown items of US states.  Uses the 2-digit state code as the value, and displays the full state name as the displayed text.
+
+*Usage:*  
+```html
+<head>
+  <script src="./stateDropdownPopulator.js" type="text/javascript"></script>
+</head>
+<body>
+	<select id="stateDropDown"></select>
+</body>
+```
 
 
 #### Request for help
