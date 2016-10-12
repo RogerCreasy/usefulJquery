@@ -35,6 +35,34 @@ This jQuery snippet allows you to highlight the active element in a nav bar by u
 </body>
 ```
 
+[**Disable Links**](disableLinks.js)  
+This jQuery snippet allows you to disable any links that have the `.disabled-link` class.  
+
+*Usage:*  
+```html
+<head>
+  <script src="./disableLinks.js" type="text/javascript"></script>
+</head>
+<body>
+    <a href="disableLinks.js">Normal</a>
+    <a href="disableLinks.js" class="disabled-link">Disabled</a>
+</body>
+```
+
+[**Disable Links**](linksToNewWindow.js)  
+This jQuery snippet allows you to force all external links to open in a new tab using `_blank` for the `target` attribute.  
+
+*Usage:*  
+```html
+<head>
+  <script src="./linksToNewWindow.js" type="text/javascript"></script>
+</head>
+<body>
+    <a href="linksToNewWindow.js">This link will open in the same tab.</a>
+    <a href="https://external-link.com/">This link will be forced to open in a new tab.</a>
+</body>
+```
+
 [**Smooth Scroll**](smoothScroll.js)  
 This jQuery snippet allows you to scroll to any id on the page by clicking a nav item link with a selector of `.nav a`. The `a` tag must use a href pointing to an id (i.e. `<a href="#examples">Examples</a>`).  
 
@@ -52,6 +80,8 @@ This jQuery snippet allows you to scroll to any id on the page by clicking a nav
   <div id="About"></div>
 </body>
 ```
+
+
 
 #### Request for help
 ----------------
