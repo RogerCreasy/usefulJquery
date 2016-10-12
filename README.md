@@ -28,10 +28,38 @@ This jQuery snippet allows you to highlight the active element in a nav bar by u
   <script src="./bootstrapNavHighlightActive.js" type="text/javascript"></script>
 </head>
 <body>
-	<ul class="nav">
+  <ul class="nav">
     <li><a href="/home">Home</a></li>
     <li><a href="/about">About</a></li>
   </ul>
+</body>
+```
+
+[**Canvas to Blob**](canvas-to-blob.js)  
+This jQuery snippet is a polyfill for the standard JavaScript canvas.toBlob method. It can be used to create Blob objects from an HTML canvas element..  
+
+*Usage:*  
+```html
+<head>
+  <script src="./canvas-to-blob.js" type="text/javascript"></script>
+</head>
+<body>
+  <script type="text/javascript">
+	var canvas = document.createElement('canvas');
+	/* ... your canvas manipulations ... */
+	if (canvas.toBlob) {
+		canvas.toBlob(
+			function (blob) {
+				// Do something with the blob object,
+				// e.g. creating a multipart form for file uploads:
+				var formData = new FormData();
+				formData.append('file', blob, fileName);
+				/* ... */
+			},
+			'image/jpeg'
+		);
+	}
+  </script>
 </body>
 ```
 
@@ -72,7 +100,7 @@ This jQuery snippet allows you to scroll to any id on the page by clicking a nav
   <script src="./smoothScroll.js" type="text/javascript"></script>
 </head>
 <body>
-	<ul>
+  <ul>
     <li class="nav"><a href="#home">Home</a></li>
     <li class="nav"><a href="#about">About</a></li>
   </ul>
