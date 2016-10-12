@@ -77,6 +77,48 @@ This jQuery snippet allows you to disable any links that have the `.disabled-lin
 </body>
 ```
 
+[**Easy Toggle Checkboxes**](easyToggleCheckboxes.js)  
+Allows you to easily toggle checkboxes using 2 classes. *[Example JSFiddle](https://jsfiddle.net/PXgamer/ngL66hjm/)*  
+
+`.checkAll` is used for the toggle. This can be a `button` or an `a` element.  
+`.all-checkable` is used for the checkboxes that can be toggled by it.  
+
+*Usage:*  
+```html
+<head>
+  <script src="./easyToggleCheckboxes.js" type="text/javascript"></script>
+</head>
+<body>
+    <ul class="no-dot">
+      <li>
+        <label for="known">
+          <input id="known" class="all-checkable" type="checkbox" name="checked[]" /> Known</label>
+      </li>
+      <li>
+        <label for="unsure">
+          <input id="unsure" class="all-checkable" type="checkbox" name="checked[]" /> Unsure</label>
+      </li>
+      <li>
+        <label for="unknown">
+          <input id="unknown" class="all-checkable" type="checkbox" name="checked[]" /> Unknown</label>
+      </li>
+    </ul>
+    <button type="button" class="checkAll">Check All</button>
+    <script type="text/javascript">
+    var none_checked = true;
+    $('.checkAll').click(function() {
+      if (none_checked) {
+        $('input.all-checkable').prop('checked', 'checked');
+        none_checked = false;
+      } else {
+        $('input.all-checkable').prop('checked', false);
+        none_checked = true;
+      }
+    });
+    </script>
+</body>
+```
+
 [**New Window**](linksToNewWindow.js)  
 This jQuery snippet allows you to force all external links to open in a new tab using `_blank` for the `target` attribute.  
 
