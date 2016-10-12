@@ -49,7 +49,7 @@ This jQuery snippet allows you to disable any links that have the `.disabled-lin
 </body>
 ```
 
-[**Disable Links**](linksToNewWindow.js)  
+[**New Window**](linksToNewWindow.js)  
 This jQuery snippet allows you to force all external links to open in a new tab using `_blank` for the `target` attribute.  
 
 *Usage:*  
