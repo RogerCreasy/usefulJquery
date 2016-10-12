@@ -91,6 +91,21 @@ This jQuery snippet allows you to force all external links to open in a new tab 
 </body>
 ```
 
+[**Nodes Analyser**](nodesAnalyser.js)  
+This jQuery snippet allows you to analyse some useful DOM information including the depth of the deepest node, the number of nodes on the page, and adds a shadow around all DOM Nodes.  
+
+*Usage:*  
+```html
+<head>
+  <script src="./nodesAnalyser.js" type="text/javascript"></script>
+</head>
+<body>
+    <script type="text/javascript">
+		walk($(document.body), 0);
+	</script>
+</body>
+```
+
 [**Smooth Scroll**](smoothScroll.js)  
 This jQuery snippet allows you to scroll to any id on the page by clicking a nav item link with a selector of `.nav a`. The `a` tag must use a href pointing to an id (i.e. `<a href="#examples">Examples</a>`).  
 
