@@ -3,7 +3,7 @@
  * Author: Arturo Romero
  * Author Email: artromero801@gmail.com
  * Created : 10/12/16
- * Description: Add a text tooltip to any element with a data attribute
+ * Description: Add a text tooltip to any element
  * example: http://jsbin.com/xilunog/edit?html,css,js,output
  */
 $('.element-with-tooltip').hover(function() {
