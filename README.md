@@ -202,6 +202,24 @@ This jQuery snippet allows you to automatically fill a `select` element with dro
 </body>
 ```
 
+[**Check IE Version**](checkIEVersion.js)
+This jQuery snippet allows you to check the version of IE the user is running. It returns a Number as the version of IE.
+
+*Usage:*  
+```html
+<head>
+  <script src="./checkIEVersion.js" type="text/javascript"></script>
+</head>
+<body>
+  <script type="text/javascript">
+		var IEVersion = checkIEVersion();
+    if (IEVersion) {
+      alert("You are running Internet Explorer version: " + IEVersion);
+    }
+	</script>
+</body>
+```
+
 
 #### Request for help
 ----------------
