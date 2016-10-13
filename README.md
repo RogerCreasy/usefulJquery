@@ -71,5 +71,26 @@ $('img.swap-svg').swapSvg();
 its important that you select a image tag with a class of swap-svg
 
 
-# back-to-top
+## back-to-top
+    docs coming soon
+
+## boot-strap-nav-highlight-active
+    docs coming soon
+
+## canvas-to-blob
+    docs coming soon
+
+## disable-links
+    docs coming soon
+
+## links-to-new-window
+    docs coming soon
+
+## nodes-analyser
+    docs coming soon
+
+## smooth-scroll
+    docs coming soon
+
+## state-dropdown-populator
     docs coming soon
