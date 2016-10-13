@@ -7,6 +7,14 @@ If you are interested in contributing, please submit a PR.
 ## Table of Contents
 - [Useful Jquery](#useful)
     - [swap-img-to-svg](#swap-img-to-svg)
+    - [backToTopJs](#back-to-top)
+    - [bootStrapNavHighlightActive](#boot-strap-nav-highlight-active)
+    - [canvas-to-blob](#canvas-to-blob)
+    - [disableLinks](#disable-links)
+    - [linksToNewWindow](#links-to-new-window)
+    - [nodesAnalyser](#nodes-analyser)
+    - [smoothScroll](#smooth-scroll)
+    - [stateDropdownPopulator](#state-dropdown-populator)
 
 ## swap-img-to-svg
 ### Docs
@@ -62,4 +70,6 @@ $('img.swap-svg').swapSvg();
 
 its important that you select a image tag with a class of swap-svg
 
- 
+
+# back-to-top
+    docs coming soon
