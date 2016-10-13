@@ -119,6 +119,29 @@ Allows you to easily toggle checkboxes using 2 classes. *[Example JSFiddle](http
 </body>
 ```
 
+[**Fluent Node Creation**](fluentNodeCreation.js)  
+This jQuery snippet allows you to easily create DOM nodes by passing parameters to the jQuery-call.
+The snippet below will create a in-memory node, it's HTML will be `<div id="divID" class="class-1 class-2" foo="bar"></div>`.
+
+*Usage:*
+```javascript
+$("<div/>", {
+  id: "divID",
+  class: "class-1 class-2",
+  foo: "bar"
+});
+```
+
+Because of jQuery's fluent pattern you can call every jQuery method on that node like this:
+```javascript
+$("<p/>", {
+  id: "testP",
+  text: "Click me to change colour"
+}).on("click", function() {
+  $(this).css("color", "#" + Math.random().toString(16).slice(2, 8));
+});
+```
+
 [**New Window**](linksToNewWindow.js)  
 This jQuery snippet allows you to force all external links to open in a new tab using `_blank` for the `target` attribute.  
 
