@@ -133,6 +133,33 @@ This jQuery snippet allows you to force all external links to open in a new tab 
 </body>
 ```
 
+[**Micro Side Bar**](microSideBar.js)  
+This jQuery snippet allows you to quickly create a micro side bar with 2 different classes. `.sidebarToggle` for the toggle bar, and `.sidebar` for the sidebar area.  
+https://jsfiddle.net/PXgamer/te3hqgm5/  
+
+*Usage:*  
+```html
+<head>
+  <script src="./microSideBar.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="ui sidebar">
+	  <div class="pull-left" style="display: inline-block; min-width: 183px; min-height: 165px; height: 100%;">
+		<strong class="list-group-item">Required Links</strong>
+		<a href="https://github.com/PXgamer" class="list-group-item" target="_blank">GitHub</a>
+		<a href="https://code.jquery.com" class="list-group-item" target="_blank">jQuery</a>
+		<a href="https://getbootstrap.com/getting-started/" class="list-group-item" target="_blank">Bootstrap</a>
+	  </div>
+	  <div class="pull-right" style="display: inline-block; margin-left: 2px;">
+		<a class="btn btn-xs btn-default sidebarToggle" style="min-height: 165px;"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	  </div>
+	</div>
+	<div>
+		<!-- Other Content -->
+	</div>
+</body>
+```
+
 [**Nodes Analyser**](nodesAnalyser.js)  
 This jQuery snippet allows you to analyse some useful DOM information including the depth of the deepest node, the number of nodes on the page, and adds a shadow around all DOM Nodes.  
 
