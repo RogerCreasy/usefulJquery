@@ -13,7 +13,7 @@ $(document).ready({
 	  if (index > 0) {
 	    // return IE version
 	    return parseInt(agent.substring(index+ 5, agent.indexOf(".", index)));
-	  } else if (!navigator.userAgent.match(/Trident\/7\./)) {
+	  } else if (agent.indexOf("Trident/7.0") > 0) {
 	    //IE11 wants to trick user agent parsers
 	    return 11;
 	  } else {
