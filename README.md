@@ -16,6 +16,7 @@ If you are interested in contributing, please submit a PR.
     - [nodesAnalyser](#nodes-analyser)
     - [smoothScroll](#smooth-scroll)
     - [stateDropdownPopulator](#state-dropdown-populator)
+    - [tableStripes](#tableStripes)
 
 
 ## Examples
@@ -327,8 +328,18 @@ This jQuery snippet allows you to check the version of IE the user is running. I
 	</script>
 </body>
 ```
+[**tableStripes**](tableStripes.js)
+This jQuery snippet adds alternating colors on each row of a table to enhance readability.
 
-
+*Usage:*
+```html
+<head>
+  <script src="./tableStripes.js" type="text/javascript"></script>
+</head>
+<body>
+  <!-- Add a table, you're done! -->
+</body>  
+```
 
 #### Request for help
 ----------------
