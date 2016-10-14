@@ -16,6 +16,7 @@ If you are interested in contributing, please submit a PR.
     - [nodesAnalyser](#nodes-analyser)
     - [smoothScroll](#smooth-scroll)
     - [stateDropdownPopulator](#state-dropdown-populator)
+    - [fontChange](#font-change)
 
 
 ## Examples
@@ -259,17 +260,17 @@ This jQuery snippet allows you to automatically fill a `select` element with dro
 ## swap-img-to-svg
 ### Docs
  Jquery plugin to Swap Images with svg src with inline svg Elements.
- 
+
 ### The Problem.
- 
+
  If you've ever used svg icons, you would have added it as an source, like so.
- 
+
  ```
  <img src="circle.svg" />
  ```
- 
+
  this takes away all the editability of the svg. you cannot use css selectors, etc.
- 
+
 ### The solution
 
 the plugin swaps this
@@ -277,7 +278,7 @@ the plugin swaps this
  ```
  <img class="swap-svg" id="myid" src="circle.svg" />
  ```
- 
+
  ```
  <svg class="swap-svg" id="myid" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="330px" height="400px" viewBox="0 0 330 400">
 ......
@@ -328,8 +329,30 @@ This jQuery snippet allows you to check the version of IE the user is running. I
 </body>
 ```
 
+[**Font Change**](fontChange.js)
+This function adjusts the font size of a given element in increments of 3px. The font size may be made either smaller or larger.
 
+*Usage:*
+
+Making an element with id 'example' smaller by 3px:
+```
+font_change($('#example'), 'smaller');
+```
+
+Making an element smaller when clicking it...
+```
+$('#smaller').click(function(){
+	font_change($('p'),'smaller');
+});
+```
+
+... or larger:
+```
+$('#larger').click(function(){
+	font_change($('p'),'larger');
+});
+```
 
 #### Request for help
 ----------------
-I would like to add a directory of the code snippets here in the readme. If you are willing to help, please submit a PR 
+I would like to add a directory of the code snippets here in the readme. If you are willing to help, please submit a PR
