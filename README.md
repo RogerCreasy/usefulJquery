@@ -14,6 +14,21 @@ A collection of useful jquery snippets.
 * [smoothScroll.js](smoothScroll.js) - It makes the webpage scroll smoothly to the href attribute of the link which is clicked. Most preferably used in single page websites, attached to the navigation bar.
 * [stateDropdownPopulator.js](stateDropdownPopulator.js) - Populate a select dropdown with options that have full name displayed, state code as value.
 
+
+## Table of Contents
+- [Useful Jquery](#useful)
+    - [swap-img-to-svg](#swap-img-to-svg)
+    - [backToTopJs](#back-to-top)
+    - [bootStrapNavHighlightActive](#boot-strap-nav-highlight-active)
+    - [canvas-to-blob](#canvas-to-blob)
+    - [disableLinks](#disable-links)
+    - [linksToNewWindow](#links-to-new-window)
+    - [nodesAnalyser](#nodes-analyser)
+    - [smoothScroll](#smooth-scroll)
+    - [stateDropdownPopulator](#state-dropdown-populator)
+    - [fontChange](#font-change)
+
+
 ## Examples
 
 [**Back To Top Button**](backToTop.js)  
@@ -350,4 +365,4 @@ $('#larger').click(function(){
 
 #### Request for help
 ----------------
-I would like to add a directory of the code snippets here in the readme. If you are willing to help, please submit a PR 
+I would like to add a directory of the code snippets here in the readme. If you are willing to help, please submit a PR
