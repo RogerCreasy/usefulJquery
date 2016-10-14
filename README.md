@@ -2,7 +2,17 @@
 
 A collection of useful jquery snippets.
 
-If you are interested in contributing, please submit a PR.
+* [backToTop.js](backToTop.js) - Link to scroll to top on a webpage
+* [bootstrapNavHighlightActive.js](bootstrapNavHighlightActive.js) - Highlight active element in Bootstrap nav
+* [canvas-to-blob.js](canvas-to-blob.js) - JavaScript Canvas to Blob
+* [disableLinks.js](disableLinks.js)
+* [linksToNewWindow.js](linksToNewWindow.js) - Make all external links on a site target="_blank"
+* [nodesAnalyser.js](nodesAnalyser.js) - Analyse some properties of your page
+  * depth of the deepest DOMNode
+  * amount of DOMNodes on the page
+  * sets a box-shadow around all DOMNodes
+* [smoothScroll.js](smoothScroll.js) - It makes the webpage scroll smoothly to the href attribute of the link which is clicked. Most preferably used in single page websites, attached to the navigation bar.
+* [stateDropdownPopulator.js](stateDropdownPopulator.js) - Populate a select dropdown with options that have full name displayed, state code as value.
 
 ## Examples
 
@@ -156,6 +166,33 @@ This jQuery snippet allows you to force all external links to open in a new tab 
 </body>
 ```
 
+[**Micro Side Bar**](microSideBar.js)  
+This jQuery snippet allows you to quickly create a micro side bar with 2 different classes. `.sidebarToggle` for the toggle bar, and `.sidebar` for the sidebar area.  
+https://jsfiddle.net/PXgamer/te3hqgm5/  
+
+*Usage:*  
+```html
+<head>
+  <script src="./microSideBar.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="ui sidebar">
+	  <div class="pull-left" style="display: inline-block; min-width: 183px; min-height: 165px; height: 100%;">
+		<strong class="list-group-item">Required Links</strong>
+		<a href="https://github.com/PXgamer" class="list-group-item" target="_blank">GitHub</a>
+		<a href="https://code.jquery.com" class="list-group-item" target="_blank">jQuery</a>
+		<a href="https://getbootstrap.com/getting-started/" class="list-group-item" target="_blank">Bootstrap</a>
+	  </div>
+	  <div class="pull-right" style="display: inline-block; margin-left: 2px;">
+		<a class="btn btn-xs btn-default sidebarToggle" style="min-height: 165px;"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	  </div>
+	</div>
+	<div>
+		<!-- Other Content -->
+	</div>
+</body>
+```
+
 [**Nodes Analyser**](nodesAnalyser.js)  
 This jQuery snippet allows you to analyse some useful DOM information including the depth of the deepest node, the number of nodes on the page, and adds a shadow around all DOM Nodes.  
 
@@ -189,6 +226,19 @@ This jQuery snippet allows you to scroll to any id on the page by clicking a nav
 </body>
 ```
 
+[**Tooltip**](tooltip.js)  
+This jQuery snippet allows you to add a fading tooltip to any element with the class `.element-with-tooltip`.  
+
+*Usage:*  
+```html
+<head>
+  <script src="./tooltip.js" type="text/javascript"></script>
+</head>
+<body>
+  <span class="element-with-tooltip" data-tooltip="TEST TIP">Testing</span>
+</body>
+```
+
 [**US State Select Populator**](stateDropdownPopulator.js)  
 This jQuery snippet allows you to automatically fill a `select` element with dropdown items of US states.  Uses the 2-digit state code as the value, and displays the full state name as the displayed text.
 
@@ -201,6 +251,60 @@ This jQuery snippet allows you to automatically fill a `select` element with dro
 	<select id="stateDropDown"></select>
 </body>
 ```
+[**Swap img tags with inline svg**](swap-image-to-svg.js)
+## swap-img-to-svg
+### Docs
+ Jquery plugin to Swap Images with svg src with inline svg Elements.
+
+### The Problem.
+
+ If you've ever used svg icons, you would have added it as an source, like so.
+
+ ```
+ <img src="circle.svg" />
+ ```
+
+ this takes away all the editability of the svg. you cannot use css selectors, etc.
+
+### The solution
+
+the plugin swaps this
+
+ ```
+ <img class="swap-svg" id="myid" src="circle.svg" />
+ ```
+
+ ```
+ <svg class="swap-svg" id="myid" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="330px" height="400px" viewBox="0 0 330 400">
+......
+</svg>
+```
+now you can use your css selector to change colors, etc.
+
+#### Usage.
+
+1. Add the scripts.
+
+```
+<script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+<script src="swap-svg.js" charset="utf-8"></script>
+
+```
+2. Add a class to the images you wanna swap
+
+```
+<img class="swap-svg" id="myid" src="circle.svg" />
+<swap class="swap-svg" src="BatmanHat.svg"></swap>
+```
+yes, it works on any tag as long as it as a src attribute with svg file source.
+
+3. initiate the plugin.
+
+```
+$('img.swap-svg').swapSvg();
+```
+its important that you select a image tag with a class of swap-svg
+
 
 [**Check IE Version**](checkIEVersion.js)
 This jQuery snippet allows you to check the version of IE the user is running. It returns a Number as the version of IE.
@@ -220,6 +324,29 @@ This jQuery snippet allows you to check the version of IE the user is running. I
 </body>
 ```
 
+[**Font Change**](fontChange.js)
+This function adjusts the font size of a given element in increments of 3px. The font size may be made either smaller or larger.
+
+*Usage:*
+
+Making an element with id 'example' smaller by 3px:
+```
+font_change($('#example'), 'smaller');
+```
+
+Making an element smaller when clicking it...
+```
+$('#smaller').click(function(){
+	font_change($('p'),'smaller');
+});
+```
+
+... or larger:
+```
+$('#larger').click(function(){
+	font_change($('p'),'larger');
+});
+```
 
 #### Request for help
 ----------------
