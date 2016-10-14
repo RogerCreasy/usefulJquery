@@ -133,7 +133,7 @@ This jQuery snippet allows you to add a fading tooltip to any element with the c
   <script src="./tooltip.js" type="text/javascript"></script>
 </head>
 <body>
-  <span class="element-with-tooltip" tooltip="TEST TIP">Testing</span>
+  <span class="element-with-tooltip" data-tooltip="TEST TIP">Testing</span>
 </body>
 ```
 
