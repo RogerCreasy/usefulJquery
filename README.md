@@ -16,6 +16,7 @@ If you are interested in contributing, please submit a PR.
     - [nodesAnalyser](#nodes-analyser)
     - [smoothScroll](#smooth-scroll)
     - [stateDropdownPopulator](#state-dropdown-populator)
+    - [fontChange](#font-change)
 
 
 ## Examples
@@ -327,6 +328,30 @@ This jQuery snippet allows you to check the version of IE the user is running. I
 	</script>
 </body>
 ```
+
+[**Font Change**](fontChange.js)
+ This function adjusts the font size of a given element in increments of 3px. The font size may be made either smaller or larger.
+ 
+ *Usage:*
+ 
+ Making an element with id 'example' smaller by 3px:
+ ```
+ font_change($('#example'), 'smaller');
+ ```
+ 
+ Making an element smaller when clicking it...
+ ```
+ $('#smaller').click(function(){
+ 	font_change($('p'),'smaller');
+ });
+ ```
+  
+ ... or larger:
+ ```
+ $('#larger').click(function(){
+ 	font_change($('p'),'larger');
+ });
+ ```
 
 
 
