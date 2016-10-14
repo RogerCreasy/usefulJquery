@@ -230,6 +230,19 @@ This jQuery snippet allows you to scroll to any id on the page by clicking a nav
 </body>
 ```
 
+[**Tooltip**](tooltip.js)  
+This jQuery snippet allows you to add a fading tooltip to any element with the class `.element-with-tooltip`.  
+
+*Usage:*  
+```html
+<head>
+  <script src="./tooltip.js" type="text/javascript"></script>
+</head>
+<body>
+  <span class="element-with-tooltip" data-tooltip="TEST TIP">Testing</span>
+</body>
+```
+
 [**US State Select Populator**](stateDropdownPopulator.js)  
 This jQuery snippet allows you to automatically fill a `select` element with dropdown items of US states.  Uses the 2-digit state code as the value, and displays the full state name as the displayed text.
 
