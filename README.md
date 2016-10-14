@@ -133,6 +133,29 @@ Allows you to easily toggle checkboxes using 2 classes. *[Example JSFiddle](http
 </body>
 ```
 
+[**Fluent Node Creation**](fluentNodeCreation.js)  
+This jQuery snippet allows you to easily create DOM nodes by passing parameters to the jQuery-call.
+The snippet below will create a in-memory node, it's HTML will be `<div id="divID" class="class-1 class-2" foo="bar"></div>`.
+
+*Usage:*
+```javascript
+$("<div/>", {
+  id: "divID",
+  class: "class-1 class-2",
+  foo: "bar"
+});
+```
+
+Because of jQuery's fluent pattern you can call every jQuery method on that node like this:
+```javascript
+$("<p/>", {
+  id: "testP",
+  text: "Click me to change colour"
+}).on("click", function() {
+  $(this).css("color", "#" + Math.random().toString(16).slice(2, 8));
+});
+```
+
 [**New Window**](linksToNewWindow.js)  
 This jQuery snippet allows you to force all external links to open in a new tab using `_blank` for the `target` attribute.  
 
@@ -244,8 +267,28 @@ yes, it works on any tag as long as it as a src attribute with svg file source.
 ```
 $('img.swap-svg').swapSvg();
 ```
-
 its important that you select a image tag with a class of swap-svg
+
+
+[**Check IE Version**](checkIEVersion.js)
+This jQuery snippet allows you to check the version of IE the user is running. It returns a Number as the version of IE.
+
+*Usage:*  
+```html
+<head>
+  <script src="./checkIEVersion.js" type="text/javascript"></script>
+</head>
+<body>
+  <script type="text/javascript">
+		var IEVersion = checkIEVersion();
+    if (IEVersion) {
+      alert("You are running Internet Explorer version: " + IEVersion);
+    }
+	</script>
+</body>
+```
+
+
 
 #### Request for help
 ----------------
