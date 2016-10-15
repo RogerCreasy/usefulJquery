@@ -1,0 +1,22 @@
+<!-- Canvas to Blob usage -->
+<head>
+  <script src="./canvas-to-blob.js" type="text/javascript"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    var canvas = document.createElement('canvas');
+    /* ... your canvas manipulations ... */
+    if (canvas.toBlob) {
+        canvas.toBlob(
+            function (blob) {
+                // Do something with the blob object,
+                // e.g. creating a multipart form for file uploads:
+                var formData = new FormData();
+                formData.append('file', blob, fileName);
+                /* ... */
+            },
+            'image/jpeg'
+        );
+    }
+  </script>
+</body>
