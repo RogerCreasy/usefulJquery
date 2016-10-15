@@ -17,14 +17,15 @@ If you are interested in contributing, please submit a PR.
     - [smoothScroll](#smooth-scroll)
     - [stateDropdownPopulator](#state-dropdown-populator)
     - [fontChange](#font-change)
+    - [tableStripes](#tableStripes)
 
 
 ## Examples
 
-[**Back To Top Button**](backToTop.js)  
-This jQuery snippet allows you to scroll to the top of the page when clicking on the element with a class of `.backToTop`.  
+[**Back To Top Button**](backToTop.js)
+This jQuery snippet allows you to scroll to the top of the page when clicking on the element with a class of `.backToTop`.
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./backToTop.js" type="text/javascript"></script>
@@ -34,10 +35,10 @@ This jQuery snippet allows you to scroll to the top of the page when clicking on
 </body>
 ```
 
-[**Bootstrap Nav Highlight**](bootstrapNavHighlightActive.js)  
-This jQuery snippet allows you to highlight the active element in a nav bar by using a `ul` with a class of `.nav`.  
+[**Bootstrap Nav Highlight**](bootstrapNavHighlightActive.js)
+This jQuery snippet allows you to highlight the active element in a nav bar by using a `ul` with a class of `.nav`.
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./bootstrapNavHighlightActive.js" type="text/javascript"></script>
@@ -50,10 +51,10 @@ This jQuery snippet allows you to highlight the active element in a nav bar by u
 </body>
 ```
 
-[**Canvas to Blob**](canvas-to-blob.js)  
-This jQuery snippet is a polyfill for the standard JavaScript canvas.toBlob method. It can be used to create Blob objects from an HTML canvas element..  
+[**Canvas to Blob**](canvas-to-blob.js)
+This jQuery snippet is a polyfill for the standard JavaScript canvas.toBlob method. It can be used to create Blob objects from an HTML canvas element..
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./canvas-to-blob.js" type="text/javascript"></script>
@@ -78,10 +79,10 @@ This jQuery snippet is a polyfill for the standard JavaScript canvas.toBlob meth
 </body>
 ```
 
-[**Disable Links**](disableLinks.js)  
-This jQuery snippet allows you to disable any links that have the `.disabled-link` class.  
+[**Disable Links**](disableLinks.js)
+This jQuery snippet allows you to disable any links that have the `.disabled-link` class.
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./disableLinks.js" type="text/javascript"></script>
@@ -92,13 +93,13 @@ This jQuery snippet allows you to disable any links that have the `.disabled-lin
 </body>
 ```
 
-[**Easy Toggle Checkboxes**](easyToggleCheckboxes.js)  
-Allows you to easily toggle checkboxes using 2 classes. *[Example JSFiddle](https://jsfiddle.net/PXgamer/ngL66hjm/)*  
+[**Easy Toggle Checkboxes**](easyToggleCheckboxes.js)
+Allows you to easily toggle checkboxes using 2 classes. *[Example JSFiddle](https://jsfiddle.net/PXgamer/ngL66hjm/)*
 
-`.checkAll` is used for the toggle. This can be a `button` or an `a` element.  
-`.all-checkable` is used for the checkboxes that can be toggled by it.  
+`.checkAll` is used for the toggle. This can be a `button` or an `a` element.
+`.all-checkable` is used for the checkboxes that can be toggled by it.
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./easyToggleCheckboxes.js" type="text/javascript"></script>
@@ -134,7 +135,7 @@ Allows you to easily toggle checkboxes using 2 classes. *[Example JSFiddle](http
 </body>
 ```
 
-[**Fluent Node Creation**](fluentNodeCreation.js)  
+[**Fluent Node Creation**](fluentNodeCreation.js)
 This jQuery snippet allows you to easily create DOM nodes by passing parameters to the jQuery-call.
 The snippet below will create a in-memory node, it's HTML will be `<div id="divID" class="class-1 class-2" foo="bar"></div>`.
 
@@ -157,10 +158,10 @@ $("<p/>", {
 });
 ```
 
-[**New Window**](linksToNewWindow.js)  
-This jQuery snippet allows you to force all external links to open in a new tab using `_blank` for the `target` attribute.  
+[**New Window**](linksToNewWindow.js)
+This jQuery snippet allows you to force all external links to open in a new tab using `_blank` for the `target` attribute.
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./linksToNewWindow.js" type="text/javascript"></script>
@@ -171,11 +172,11 @@ This jQuery snippet allows you to force all external links to open in a new tab 
 </body>
 ```
 
-[**Micro Side Bar**](microSideBar.js)  
-This jQuery snippet allows you to quickly create a micro side bar with 2 different classes. `.sidebarToggle` for the toggle bar, and `.sidebar` for the sidebar area.  
-https://jsfiddle.net/PXgamer/te3hqgm5/  
+[**Micro Side Bar**](microSideBar.js)
+This jQuery snippet allows you to quickly create a micro side bar with 2 different classes. `.sidebarToggle` for the toggle bar, and `.sidebar` for the sidebar area.
+https://jsfiddle.net/PXgamer/te3hqgm5/
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./microSideBar.js" type="text/javascript"></script>
@@ -198,10 +199,10 @@ https://jsfiddle.net/PXgamer/te3hqgm5/
 </body>
 ```
 
-[**Nodes Analyser**](nodesAnalyser.js)  
-This jQuery snippet allows you to analyse some useful DOM information including the depth of the deepest node, the number of nodes on the page, and adds a shadow around all DOM Nodes.  
+[**Nodes Analyser**](nodesAnalyser.js)
+This jQuery snippet allows you to analyse some useful DOM information including the depth of the deepest node, the number of nodes on the page, and adds a shadow around all DOM Nodes.
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./nodesAnalyser.js" type="text/javascript"></script>
@@ -213,10 +214,10 @@ This jQuery snippet allows you to analyse some useful DOM information including 
 </body>
 ```
 
-[**Smooth Scroll**](smoothScroll.js)  
-This jQuery snippet allows you to scroll to any id on the page by clicking a nav item link with a selector of `.nav a`. The `a` tag must use a href pointing to an id (i.e. `<a href="#examples">Examples</a>`).  
+[**Smooth Scroll**](smoothScroll.js)
+This jQuery snippet allows you to scroll to any id on the page by clicking a nav item link with a selector of `.nav a`. The `a` tag must use a href pointing to an id (i.e. `<a href="#examples">Examples</a>`).
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./smoothScroll.js" type="text/javascript"></script>
@@ -231,10 +232,10 @@ This jQuery snippet allows you to scroll to any id on the page by clicking a nav
 </body>
 ```
 
-[**Tooltip**](tooltip.js)  
-This jQuery snippet allows you to add a fading tooltip to any element with the class `.element-with-tooltip`.  
+[**Tooltip**](tooltip.js)
+This jQuery snippet allows you to add a fading tooltip to any element with the class `.element-with-tooltip`.
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./tooltip.js" type="text/javascript"></script>
@@ -244,10 +245,10 @@ This jQuery snippet allows you to add a fading tooltip to any element with the c
 </body>
 ```
 
-[**US State Select Populator**](stateDropdownPopulator.js)  
+[**US State Select Populator**](stateDropdownPopulator.js)
 This jQuery snippet allows you to automatically fill a `select` element with dropdown items of US states.  Uses the 2-digit state code as the value, and displays the full state name as the displayed text.
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./stateDropdownPopulator.js" type="text/javascript"></script>
@@ -314,7 +315,7 @@ its important that you select a image tag with a class of swap-svg
 [**Check IE Version**](checkIEVersion.js)
 This jQuery snippet allows you to check the version of IE the user is running. It returns a Number as the version of IE.
 
-*Usage:*  
+*Usage:*
 ```html
 <head>
   <script src="./checkIEVersion.js" type="text/javascript"></script>
@@ -328,6 +329,8 @@ This jQuery snippet allows you to check the version of IE the user is running. I
 	</script>
 </body>
 ```
+[**tableStripes**](tableStripes.js)
+This jQuery snippet adds alternating colors on each row of a table to enhance readability.
 
 [**Font Change**](fontChange.js)
 This function adjusts the font size of a given element in increments of 3px. The font size may be made either smaller or larger.
@@ -351,8 +354,14 @@ $('#smaller').click(function(){
 $('#larger').click(function(){
 	font_change($('p'),'larger');
 });
+=======
+*Usage:*
+```html
+<head>
+  <script src="./tableStripes.js" type="text/javascript"></script>
+</head>
+<body>
+  <!-- Add a table, you're done! -->
+</body>
 ```
 
-#### Request for help
-----------------
-I would like to add a directory of the code snippets here in the readme. If you are willing to help, please submit a PR
