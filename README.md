@@ -18,6 +18,7 @@ If you are interested in contributing, please submit a PR.
     - [stateDropdownPopulator](#state-dropdown-populator)
     - [fontChange](#font-change)
     - [tableStripes](#tableStripes)
+=======
 
 
 ## Examples
@@ -333,7 +334,31 @@ This jQuery snippet allows you to check the version of IE the user is running. I
 This jQuery snippet adds alternating colors on each row of a table to enhance readability.
 
 [**Font Change**](fontChange.js)
+
 This function adjusts the font size of a given element in increments of 3px. The font size may be made either smaller or larger.
+=======
+ This function adjusts the font size of a given element in increments of 3px. The font size may be made either smaller or larger.
+ 
+ *Usage:*
+ 
+ Making an element with id 'example' smaller by 3px:
+ ```
+ font_change($('#example'), 'smaller');
+ ```
+ 
+ Making an element smaller when clicking it...
+ ```
+ $('#smaller').click(function(){
+ 	font_change($('p'),'smaller');
+ });
+ ```
+  
+ ... or larger:
+ ```
+ $('#larger').click(function(){
+ 	font_change($('p'),'larger');
+ });
+ ```
 
 *Usage:*
 
