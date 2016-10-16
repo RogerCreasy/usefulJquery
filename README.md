@@ -322,32 +322,12 @@ $('img.swap-svg').swapSvg();
 its important that you select a image tag with a class of swap-svg
 
 
-[**Check IE Version**](checkIEVersion.js)
-This jQuery snippet allows you to check the version of IE the user is running. It returns a Number as the version of IE.
-
-*Usage:*
-```html
-<head>
-  <script src="./checkIEVersion.js" type="text/javascript"></script>
-</head>
-<body>
-  <script type="text/javascript">
-		var IEVersion = checkIEVersion();
-    if (IEVersion) {
-      alert("You are running Internet Explorer version: " + IEVersion);
-    }
-	</script>
-</body>
-```
-
-### <a name="tableStripes"></a> [**tableStripes**](tableStripes.js)
+### <a name="tableStripes"></a> [**Table Stripes**](tableStripes.js)
 This jQuery snippet adds alternating colors on each row of a table to enhance readability.
 
 ### <a name="font-change"></a> [**Font Change**](fontChange.js)
 
 This function adjusts the font size of a given element in increments of 3px. The font size may be made either smaller or larger.
-=======
- This function adjusts the font size of a given element in increments of 3px. The font size may be made either smaller or larger.
  
  *Usage:*
  
@@ -402,7 +382,22 @@ $('#larger').click(function(){
 
 ### <a name="checkIEVersion"></a> [**Check IE Version**](checkIEVersion.js)
 
-docs for checkIEVersion here please
+This jQuery snippet allows you to check the version of IE the user is running. It returns a Number as the version of IE.
+
+*Usage:*
+```html
+<head>
+  <script src="./checkIEVersion.js" type="text/javascript"></script>
+</head>
+<body>
+  <script type="text/javascript">
+		var IEVersion = checkIEVersion();
+    if (IEVersion) {
+      alert("You are running Internet Explorer version: " + IEVersion);
+    }
+	</script>
+</body>
+```
 
 ### <a name="loadcontentonscroll"></a> [**Load content on scroll**](loadContentOnScroll.js)
 
