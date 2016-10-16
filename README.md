@@ -7,18 +7,19 @@ If you are interested in contributing, please submit a PR.
 
 ## Table of Contents
 - [Useful Jquery](#useful)
-    - [swap-img-to-svg](#swap-img-to-svg)
-    - [backToTopJs](#back-to-top)
-    - [bootStrapNavHighlightActive](#boot-strap-nav-highlight-active)
-    - [canvas-to-blob](#canvas-to-blob)
-    - [disableLinks](#disable-links)
-    - [linksToNewWindow](#links-to-new-window)
-    - [nodesAnalyser](#nodes-analyser)
-    - [smoothScroll](#smooth-scroll)
-    - [stateDropdownPopulator](#state-dropdown-populator)
-    - [fontChange](#font-change)
-    - [tableStripes](#tableStripes)
-=======
+    - [swap img to svg](#swap-img-to-svg)
+    - [Back To TopJs](#back-to-top)
+    - [BootStrap NavHighlight Active](#boot-strap-nav-highlight-active)
+    - [Canvas to blob](#canvas-to-blob)
+    - [Disable Links](#disable-links)
+    - [Easy Toggle Checkboxes](#easyToggleCheckboxes)
+    - [Fluent Node Creation](#fluentNodeCreation)
+    - [Links To New Window](#links-to-new-window)
+    - [Nodes Analyser](#nodes-analyser)
+    - [Smooth Scroll](#smooth-scroll)
+    - [State Dropdown Populator](#state-dropdown-populator)
+    - [FontChange](#font-change)
+    - [Table Stripes](#tableStripes)
 
 
 ## Examples
@@ -80,7 +81,8 @@ This jQuery snippet is a polyfill for the standard JavaScript canvas.toBlob meth
 </body>
 ```
 
-[**Disable Links**](disableLinks.js)
+### <a name="disable-links"></a> [**Disable Links**](disableLinks.js)
+
 This jQuery snippet allows you to disable any links that have the `.disabled-link` class.
 
 *Usage:*
@@ -94,7 +96,8 @@ This jQuery snippet allows you to disable any links that have the `.disabled-lin
 </body>
 ```
 
-[**Easy Toggle Checkboxes**](easyToggleCheckboxes.js)
+### <a name="easyToggleCheckboxes"></a> [**Easy Toggle Checkboxes**](easyToggleCheckboxes.js)
+
 Allows you to easily toggle checkboxes using 2 classes. *[Example JSFiddle](https://jsfiddle.net/PXgamer/ngL66hjm/)*
 
 `.checkAll` is used for the toggle. This can be a `button` or an `a` element.
@@ -136,7 +139,7 @@ Allows you to easily toggle checkboxes using 2 classes. *[Example JSFiddle](http
 </body>
 ```
 
-[**Fluent Node Creation**](fluentNodeCreation.js)
+### <a name="fluentNodeCreation"></a>[**Fluent Node Creation**](fluentNodeCreation.js)
 This jQuery snippet allows you to easily create DOM nodes by passing parameters to the jQuery-call.
 The snippet below will create a in-memory node, it's HTML will be `<div id="divID" class="class-1 class-2" foo="bar"></div>`.
 
@@ -159,7 +162,8 @@ $("<p/>", {
 });
 ```
 
-[**New Window**](linksToNewWindow.js)
+### <a name="links-to-new-window"></a> [**New Window**](linksToNewWindow.js)
+
 This jQuery snippet allows you to force all external links to open in a new tab using `_blank` for the `target` attribute.
 
 *Usage:*
