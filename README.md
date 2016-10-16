@@ -23,7 +23,7 @@ If you are interested in contributing, please submit a PR.
 
 ## Examples
 
-[**Back To Top Button**](backToTop.js)
+### <a name="back-to-top"></a> [**Back To Top Button**](backToTop.js)
 This jQuery snippet allows you to scroll to the top of the page when clicking on the element with a class of `.backToTop`.
 
 *Usage:*
@@ -36,7 +36,7 @@ This jQuery snippet allows you to scroll to the top of the page when clicking on
 </body>
 ```
 
-[**Bootstrap Nav Highlight**](bootstrapNavHighlightActive.js)
+### <a name="boot-strap-nav-highlight-active"></a> [**Bootstrap Nav Highlight**](bootstrapNavHighlightActive.js)
 This jQuery snippet allows you to highlight the active element in a nav bar by using a `ul` with a class of `.nav`.
 
 *Usage:*
@@ -52,7 +52,7 @@ This jQuery snippet allows you to highlight the active element in a nav bar by u
 </body>
 ```
 
-[**Canvas to Blob**](canvas-to-blob.js)
+### <a name="canvas-to-blob"></a> [**Canvas to Blob**](canvas-to-blob.js)
 This jQuery snippet is a polyfill for the standard JavaScript canvas.toBlob method. It can be used to create Blob objects from an HTML canvas element..
 
 *Usage:*
