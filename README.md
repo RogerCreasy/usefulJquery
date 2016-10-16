@@ -7,7 +7,6 @@ If you are interested in contributing, please submit a PR.
 
 ## Table of Contents
 - [Useful Jquery](#useful)
-    - [swap img to svg](#swap-img-to-svg)
     - [Back To TopJs](#back-to-top)
     - [BootStrap NavHighlight Active](#boot-strap-nav-highlight-active)
     - [Canvas to blob](#canvas-to-blob)
@@ -15,11 +14,17 @@ If you are interested in contributing, please submit a PR.
     - [Easy Toggle Checkboxes](#easyToggleCheckboxes)
     - [Fluent Node Creation](#fluentNodeCreation)
     - [Links To New Window](#links-to-new-window)
+    - [Micro Sidebar](#microSideBar)
     - [Nodes Analyser](#nodes-analyser)
     - [Smooth Scroll](#smooth-scroll)
+    - [Tooltip](#tooltip)
     - [State Dropdown Populator](#state-dropdown-populator)
-    - [FontChange](#font-change)
+    - [swap img to svg](#swap-img-to-svg)
     - [Table Stripes](#tableStripes)
+    - [FontChange](#font-change)
+    - [Check IE version](#checkIEVersion)
+    - [Load content on scroll](#loadcontentonscroll)
+    - [Get jquery version](#getjqueryversion)
 
 
 ## Examples
@@ -177,7 +182,7 @@ This jQuery snippet allows you to force all external links to open in a new tab 
 </body>
 ```
 
-[**Micro Side Bar**](microSideBar.js)
+### <a name="microSideBar"><a> [**Micro Side Bar**](microSideBar.js)
 This jQuery snippet allows you to quickly create a micro side bar with 2 different classes. `.sidebarToggle` for the toggle bar, and `.sidebar` for the sidebar area.
 https://jsfiddle.net/PXgamer/te3hqgm5/
 
@@ -204,7 +209,8 @@ https://jsfiddle.net/PXgamer/te3hqgm5/
 </body>
 ```
 
-[**Nodes Analyser**](nodesAnalyser.js)
+### <a name="nodes-analyser"></a> [**Nodes Analyser**](nodesAnalyser.js)
+
 This jQuery snippet allows you to analyse some useful DOM information including the depth of the deepest node, the number of nodes on the page, and adds a shadow around all DOM Nodes.
 
 *Usage:*
@@ -219,7 +225,7 @@ This jQuery snippet allows you to analyse some useful DOM information including 
 </body>
 ```
 
-[**Smooth Scroll**](smoothScroll.js)
+### <a name="smooth-scroll"></a> [**Smooth Scroll**](smoothScroll.js)
 This jQuery snippet allows you to scroll to any id on the page by clicking a nav item link with a selector of `.nav a`. The `a` tag must use a href pointing to an id (i.e. `<a href="#examples">Examples</a>`).
 
 *Usage:*
@@ -237,7 +243,7 @@ This jQuery snippet allows you to scroll to any id on the page by clicking a nav
 </body>
 ```
 
-[**Tooltip**](tooltip.js)
+### <a name="tooltip"></a> [**Tooltip**](tooltip.js)
 This jQuery snippet allows you to add a fading tooltip to any element with the class `.element-with-tooltip`.
 
 *Usage:*
@@ -250,7 +256,7 @@ This jQuery snippet allows you to add a fading tooltip to any element with the c
 </body>
 ```
 
-[**US State Select Populator**](stateDropdownPopulator.js)
+### <a name="state-dropdown-populator"></a> [**US State Select Populator**](stateDropdownPopulator.js)
 This jQuery snippet allows you to automatically fill a `select` element with dropdown items of US states.  Uses the 2-digit state code as the value, and displays the full state name as the displayed text.
 
 *Usage:*
@@ -262,12 +268,11 @@ This jQuery snippet allows you to automatically fill a `select` element with dro
 	<select id="stateDropDown"></select>
 </body>
 ```
-[**Swap img tags with inline svg**](swap-image-to-svg.js)
-## swap-img-to-svg
-### Docs
+### <a name="swap-img-to-svg"></a> [**Swap img tags with inline svg**](swap-image-to-svg.js)
+
  Jquery plugin to Swap Images with svg src with inline svg Elements.
 
-### The Problem.
+#### The Problem.
 
  If you've ever used svg icons, you would have added it as an source, like so.
 
@@ -277,7 +282,7 @@ This jQuery snippet allows you to automatically fill a `select` element with dro
 
  this takes away all the editability of the svg. you cannot use css selectors, etc.
 
-### The solution
+#### The solution
 
 the plugin swaps this
 
@@ -334,10 +339,11 @@ This jQuery snippet allows you to check the version of IE the user is running. I
 	</script>
 </body>
 ```
-[**tableStripes**](tableStripes.js)
+
+### <a name="tableStripes"></a> [**tableStripes**](tableStripes.js)
 This jQuery snippet adds alternating colors on each row of a table to enhance readability.
 
-[**Font Change**](fontChange.js)
+### <a name="font-change"></a> [**Font Change**](fontChange.js)
 
 This function adjusts the font size of a given element in increments of 3px. The font size may be made either smaller or larger.
 =======
@@ -394,3 +400,14 @@ $('#larger').click(function(){
 </body>
 ```
 
+### <a name="checkIEVersion"></a> [**Check IE Version**](checkIEVersion.js)
+
+docs for checkIEVersion here please
+
+### <a name="loadcontentonscroll"></a> [**Load content on scroll**](loadContentOnScroll.js)
+
+docs for loadContentOnScroll.js here please
+
+### <a name="getjqueryversion"></a> [**getjqueryversion**](getjqueryversion.js)
+
+docs for getJqueryVersion.js here please
