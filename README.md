@@ -403,6 +403,12 @@ This jQuery snippet allows you to check the version of IE the user is running. I
 
 docs for loadContentOnScroll.js here please
 
-### <a name="getjqueryversion"></a> [**getjqueryversion**](getjqueryversion.js)
+### <a name="getjqueryversion"></a> [**Get jQuery Version**](getjqueryversion.js)
 
-docs for getJqueryVersion.js here please
+Gets the jQuery version being referenced as a string from the jQuery prototype's 'jquery' property.
+
+*Usage:*
+```javascript
+$.fn.jquery
+```
+Returns: 'x.x.x' where x.x.x is the version number referenced.
