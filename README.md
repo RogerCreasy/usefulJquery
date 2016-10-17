@@ -405,10 +405,11 @@ docs for loadContentOnScroll.js here please
 
 ### <a name="getjqueryversion"></a> [**Get jQuery Version**](getjqueryversion.js)
 
-Gets the jQuery version being referenced as a string from the jQuery prototype's 'jquery' property.
+Gets the jQuery version number as a string from the referenced jQuery prototype's 'jquery' property.
 
 *Usage:*
 ```javascript
-$.fn.jquery
+console.log($.fn.jquery);
+
+//Outputs a version number to the web console, like "3.1.1"
 ```
-Returns: 'x.x.x' where x.x.x is the version number referenced.
