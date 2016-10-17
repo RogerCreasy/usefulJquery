@@ -5,8 +5,8 @@
 $.fn.jquery //will return for instance "1.11.3"
 
 /**
- * the fn function in jQuery is a reference to jQuery's prototype where all the function are registered
- * for instnace if you want to see how the css function is implementd in jQuery just run
+ * the fn function in jQuery is a reference to jQuery's prototype where all the functions are registered
+ * for instance if you want to see how the css function is implementd in jQuery just run
  */
 
 console.log($.fn.css)
@@ -15,7 +15,7 @@ console.log($.fn.css)
  * and it will return something like
  */
 
-function(name, value) {
+function (name, value) {
     return access(this, function(elem, name, value) {
         var styles,
             len,
