@@ -401,7 +401,29 @@ This jQuery snippet allows you to check the version of IE the user is running. I
 
 ### <a name="loadcontentonscroll"></a> [**Load content on scroll**](loadContentOnScroll.js)
 
-docs for loadContentOnScroll.js here please
+*Usage:*
+```html
+<head>
+  <script src="./loadContentOnScroll.js" type="text/javascript"></script>
+</head>
+<body>
+  <!-- Add your first page content -->
+  <div class="content"></div>
+  <!-- Add loading image of your choice -->
+  <div id="loadingbar"><img src="http://loading.io/assets/img/hourglass.svg"></div>
+  <!-- Place loaded_max div -->
+  <div id="loaded_max"></div>
+</body>
+```
+Add some style
+```css
+#loadingbar{
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 40%;
+	}
+```
 
 ### <a name="getjqueryversion"></a> [**Get jQuery Version**](getjqueryversion.js)
 
