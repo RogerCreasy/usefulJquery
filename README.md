@@ -25,6 +25,7 @@ If you are interested in contributing, please submit a PR.
     - [Check IE version](#checkIEVersion)
     - [Load content on scroll](#loadcontentonscroll)
     - [Get jquery version](#getjqueryversion)
+    - [Stylesheet Analyser](#styleSheetAnalyser)
 
 
 ## Examples
@@ -434,4 +435,26 @@ Gets the jQuery version number as a string from the referenced jQuery prototype'
 console.log($.fn.jquery);
 
 //Outputs a version number to the web console, like "3.1.1"
+```
+
+### <a href="styleSheetAnalyser"></a> [**Stylesheet Analyser**](styleSheetAnalyser)
+
+Walk through all document.styleSheets
+
+- get all the rules with `getRules`
+- get all rules matching a string (regex supported)
+- get all rules matching for a DOMNode
+
+*Usage:*
+
+```javascript
+// get all stylesheet rules
+getRules();
+
+// get all rules with a selector matching a string (regex supported)
+getSelectorRules('.test-block');
+getSelectorRules('^div');
+
+// get all rules matching for a DOMNode
+getMatchingCSSRules($('.test-block));
 ```
