@@ -26,6 +26,7 @@ If you are interested in contributing, please submit a PR.
     - [Load content on scroll](#loadcontentonscroll)
     - [Get jquery version](#getjqueryversion)
     - [Slider jQuery](#slider-jquery)
+    - [Stylesheet Analyser](#styleSheetAnalyser)
 
 
 ## Examples
@@ -402,7 +403,29 @@ This jQuery snippet allows you to check the version of IE the user is running. I
 
 ### <a name="loadcontentonscroll"></a> [**Load content on scroll**](loadContentOnScroll.js)
 
-docs for loadContentOnScroll.js here please
+*Usage:*
+```html
+<head>
+  <script src="./loadContentOnScroll.js" type="text/javascript"></script>
+</head>
+<body>
+  <!-- Add your first page content -->
+  <div class="content"></div>
+  <!-- Add loading image of your choice -->
+  <div id="loadingbar"><img src="http://loading.io/assets/img/hourglass.svg"></div>
+  <!-- Place loaded_max div -->
+  <div id="loaded_max"></div>
+</body>
+```
+Add some style
+```css
+#loadingbar{
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 40%;
+	}
+```
 
 ### <a name="getjqueryversion"></a> [**Get jQuery Version**](getjqueryversion.js)
 
@@ -415,7 +438,7 @@ console.log($.fn.jquery);
 //Outputs a version number to the web console, like "3.1.1"
 ```
 
-### <a name="slider-jquery"></a> [**Load content on scroll**](sliderjQuery.js)
+### <a name="slider-jquery"></a> [**Slider jQuery**](sliderjQuery.js)
 
 Create slider with jQuery and CSS
 
@@ -459,4 +482,26 @@ body { margin:10px auto; text-align:center; }
 
 <div class="simple-ss" id="simple-ss"></div>
 <div class="content"></div>
+
+### <a href="styleSheetAnalyser"></a> [**Stylesheet Analyser**](styleSheetAnalyser)
+
+Walk through all document.styleSheets
+
+- get all the rules with `getRules`
+- get all rules matching a string (regex supported)
+- get all rules matching for a DOMNode
+
+*Usage:*
+
+```javascript
+// get all stylesheet rules
+getRules();
+
+// get all rules with a selector matching a string (regex supported)
+getSelectorRules('.test-block');
+getSelectorRules('^div');
+
+// get all rules matching for a DOMNode
+getMatchingCSSRules($('.test-block'));
+
 ```
