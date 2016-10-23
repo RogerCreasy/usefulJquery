@@ -25,6 +25,7 @@ If you are interested in contributing, please submit a PR.
     - [Check IE version](#checkIEVersion)
     - [Load content on scroll](#loadcontentonscroll)
     - [Get jquery version](#getjqueryversion)
+    - [Slider jQuery](#slider-jquery)
     - [Stylesheet Analyser](#styleSheetAnalyser)
 
 
@@ -437,6 +438,51 @@ console.log($.fn.jquery);
 //Outputs a version number to the web console, like "3.1.1"
 ```
 
+### <a name="slider-jquery"></a> [**Slider jQuery**](sliderjQuery.js)
+
+Create slider with jQuery and CSS
+
+*Usage:*
+```html
+<head>
+<style>
+
+body { margin:10px auto; text-align:center; }
+.content { max-width:800px;text-align:left; margin:auto; }
+
+.simple-ss {
+  width:800px;
+  height:250px;
+  background-color:red;
+  margin:auto;
+  background-image:url("http://www.mediafire.com/convkey/4989/2l919s6cqg2vm826g.jpg");
+  background-position:0;
+  background-repeat:no-repeat;
+  background-size:cover;
+
+  animation-name: slide;
+  animation-duration: 13s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+  0% {background-position:0 0;}
+  16.66% {background-position:0 0;}
+  33.32% {background-position:-800px 0;}
+  49.98% {background-position:-800px 0;}
+  66.64% {background-position:-1600px 0;}
+  83.30% {background-position:-1600px 0;}
+  100% {background-position:0 0;}
+}
+</style>
+  <script src="./sliderjQuery.js" type="text/javascript"></script>
+</head>
+
+<div class="simple-ss" id="simple-ss"></div>
+<div class="content"></div>
+
 ### <a href="styleSheetAnalyser"></a> [**Stylesheet Analyser**](styleSheetAnalyser)
 
 Walk through all document.styleSheets
@@ -457,4 +503,5 @@ getSelectorRules('^div');
 
 // get all rules matching for a DOMNode
 getMatchingCSSRules($('.test-block'));
+
 ```
