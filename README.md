@@ -456,5 +456,5 @@ getSelectorRules('.test-block');
 getSelectorRules('^div');
 
 // get all rules matching for a DOMNode
-getMatchingCSSRules($('.test-block));
+getMatchingCSSRules($('.test-block'));
 ```
