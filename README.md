@@ -27,6 +27,7 @@ If you are interested in contributing, please submit a PR.
     - [Get jquery version](#getjqueryversion)
     - [Slider jQuery](#slider-jquery)
     - [Stylesheet Analyser](#styleSheetAnalyser)
+    - [Toggle Visible](#toggleVisibility)
 
 
 ## Examples
