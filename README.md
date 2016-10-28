@@ -103,6 +103,20 @@ This jQuery snippet allows you to disable any links that have the `.disabled-lin
     <a href="disableLinks.js" class="disabled-link">Disabled</a>
 </body>
 ```
+### <a name="toggleVisibility"></a> [**Toggle Visibility**](toggleVisibility.js)
+This jQuery snippet allows you to hide any element when clicking on it with a class of `.toFade`.
+
+*Usage:*
+```html
+<head>
+  <script src="./toggleVisibility.js" type="text/javascript"></script>
+</head>
+<body>
+	<button class="fader">button to fade</button>
+	<div class="toFade">This text will fade on the click of button</div>
+</body>
+```
+
 
 ### <a name="easyToggleCheckboxes"></a> [**Easy Toggle Checkboxes**](easyToggleCheckboxes.js)
 

@@ -8,6 +8,6 @@
  */
 
 
-$(".element").on("click", function(){
-  $(".elementToFade").fadeToggle("slow", "linear");
+$(".fader").on("click", function(){
+  $(".toFade").fadeToggle("slow", "linear");
 });
