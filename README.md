@@ -28,6 +28,7 @@ If you are interested in contributing, please submit a PR.
     - [Get jquery version](#getjqueryversion)
     - [Slider jQuery](#slider-jquery)
     - [Stylesheet Analyser](#styleSheetAnalyser)
+    - [Toggle Visible](#toggleVisibility)
 
 
 ## Examples
@@ -126,6 +127,7 @@ This jQuery snippet allows you to disable any links that have the `.disabled-lin
     <a href="disableLinks.js" class="disabled-link">Disabled</a>
 </body>
 ```
+
 
 ### <a name="easyToggleCheckboxes"></a> [**Easy Toggle Checkboxes**](easyToggleCheckboxes.js)
 
@@ -528,4 +530,22 @@ getSelectorRules('^div');
 // get all rules matching for a DOMNode
 getMatchingCSSRules($('.test-block'));
 
+
 ```
+
+
+### <a name="toggleVisibility"></a> [**Toggle Visibility**](toggleVisibility.js)
+This jQuery snippet allows you to hide any element with class `.toFade` when clicking on a external element with a class of `.fader`.
+
+*Usage:*
+```html
+<head>
+  <script src="./toggleVisibility.js" type="text/javascript"></script>
+</head>
+<body>
+	<button class="fader">button to fade</button>
+	<div class="toFade">This text will fade on the click of button</div>
+</body>
+```
+
+
