@@ -7,6 +7,7 @@ If you are interested in contributing, please submit a PR.
 
 ## Table of Contents
 - [Useful Jquery](#useful)
+    - [Animate Background Color](#animateBGColor)
     - [Back To TopJs](#back-to-top)
     - [BootStrap NavHighlight Active](#boot-strap-nav-highlight-active)
     - [Canvas to blob](#canvas-to-blob)
@@ -30,6 +31,29 @@ If you are interested in contributing, please submit a PR.
 
 
 ## Examples
+
+### <a name="animateBGColor"></a> [**Animate Background Color**](animateBGColor.js)
+
+Animates the Background Color of the Element with class `.colorAnimate`.
+
+*Usage:*
+```html
+  <html>
+  <head>
+  <style type="text/css">
+    .colorAnimate{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: white;
+    }
+  </style>
+  <script src="./animateBGColor.js"></script>
+  </head>
+  <body class="colorAnimate">
+  </body>
+  </html>
+```
 
 ### <a name="back-to-top"></a> [**Back To Top Button**](backToTop.js)
 This jQuery snippet allows you to scroll to the top of the page when clicking on the element with a class of `.backToTop`.
