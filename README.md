@@ -11,6 +11,7 @@ If you are interested in contributing, please submit a PR.
     - [Back To TopJs](#back-to-top)
     - [BootStrap NavHighlight Active](#boot-strap-nav-highlight-active)
     - [Canvas to blob](#canvas-to-blob)
+    - [Copy To Clipboard](#copyToClipboard)
     - [Disable Links](#disable-links)
     - [Easy Toggle Checkboxes](#easyToggleCheckboxes)
     - [Fluent Node Creation](#fluentNodeCreation)
@@ -111,6 +112,21 @@ This jQuery snippet is a polyfill for the standard JavaScript canvas.toBlob meth
 	}
   </script>
 </body>
+```
+
+### <a name="copyToClipboard"></a> [**Copy To Clipboard**](copyToClipboard.js)
+This jQuery snippet can be used to copy contents of an element to the clipboard.
+
+*Usage:*
+```html
+<head>
+</head>
+<body>
+  <p id="copyTarget">I am the Copy Target</p>
+  <button id="copyButton">Click To Copy</button>
+  <script src="./copyToClipboard.js" type="text/javascript"></script>
+</body>
+</html>
 ```
 
 ### <a name="disable-links"></a> [**Disable Links**](disableLinks.js)
