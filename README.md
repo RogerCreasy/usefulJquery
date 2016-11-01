@@ -30,6 +30,7 @@ If you are interested in contributing, please submit a PR.
     - [Slider jQuery](#slider-jquery)
     - [Stylesheet Analyser](#styleSheetAnalyser)
     - [Toggle Visible](#toggleVisibility)
+    - [Image Loaded Check](#check-image-loaded)
 
 
 ## Examples
@@ -561,6 +562,20 @@ This jQuery snippet allows you to hide any element with class `.toFade` when cli
 <body>
 	<button class="fader">button to fade</button>
 	<div class="toFade">This text will fade on the click of button</div>
+</body>
+```
+
+
+### <a name="checkImageLoaded"></a> [**CheckImageLoaded**](checkImageLoaded.js)
+This jQuery snippet allows one to check if an image is loaded.
+
+*Usage:*
+```html
+<head>
+  <script src="./checkImageLoaded.js" type="text/javascript"></script>
+</head>
+<body>
+<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
 </body>
 ```
 
