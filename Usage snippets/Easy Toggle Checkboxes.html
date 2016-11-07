@@ -1,0 +1,33 @@
+<!-- Easy Toggle Checkboxes usage -->
+<head>
+  <script src="./easyToggleCheckboxes.js" type="text/javascript"></script>
+</head>
+<body>
+    <ul class="no-dot">
+      <li>
+        <label for="known">
+          <input id="known" class="all-checkable" type="checkbox" name="checked[]" /> Known</label>
+      </li>
+      <li>
+        <label for="unsure">
+          <input id="unsure" class="all-checkable" type="checkbox" name="checked[]" /> Unsure</label>
+      </li>
+      <li>
+        <label for="unknown">
+          <input id="unknown" class="all-checkable" type="checkbox" name="checked[]" /> Unknown</label>
+      </li>
+    </ul>
+    <button type="button" class="checkAll">Check All</button>
+    <script type="text/javascript">
+    var none_checked = true;
+    $('.checkAll').click(function() {
+      if (none_checked) {
+        $('input.all-checkable').prop('checked', 'checked');
+        none_checked = false;
+      } else {
+        $('input.all-checkable').prop('checked', false);
+        none_checked = true;
+      }
+    });
+    </script>
+</body>
