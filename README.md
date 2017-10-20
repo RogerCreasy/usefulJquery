@@ -525,6 +525,7 @@ body { margin:10px auto; text-align:center; }
 
 <div class="simple-ss" id="simple-ss"></div>
 <div class="content"></div>
+```
 
 ### <a href="styleSheetAnalyser"></a> [**Stylesheet Analyser**](styleSheetAnalyser)
 
